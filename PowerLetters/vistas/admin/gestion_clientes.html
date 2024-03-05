@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initual=1.0">
+    <title>Gestion de clientes</title>
+    <link rel="stylesheet" href="../../recursos/css/GestionC.css">
+</head>
+
+<body>
+    <div class="container-hero">
+        <div class="container hero">
+            <div class="container-logo">
+                <img src="../../recursos/imagenes/LogoPL.png" width="100">
+                <h1 class="logo"><a href="/">Power Letters</a></h1>
+            </div>
+
+            <div class="container-user">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Usuarios</a></li>
+                <li><a href="#">Cuenta</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section class="banner">
+        <div class="content-banner">
+            <h2>Gestion de<br />clientes</h2>
+        </div>
+
+    </section>
+
+
+    <div class="centrar">
+
+        <main class="table" id="customers_table">
+            <section class="table__header">
+
+                <div class="input-group">
+                    <input type="search" placeholder="Busqueda...">
+                    <img src="../../recursos/imageneS/search.png" alt="">
+                </div>
+
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Icono <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Nombre de usuario <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Correo electronico <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Opciones <span class="icon-arrow">&UpArrow;</span></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> <img src="../../recursos/imageneS/user1.jpg" alt=""></td>
+                            <td> Seoul </td>
+                            <td> 17 Dec, 2022 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><img src="../../recursos/imagenes/user2.jpg" alt=""> </td>
+                            <td> Kathmandu </td>
+                            <td> 27 Aug, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td><img src="../../recursos/imagenes/user3.jpg" alt=""></td>
+                            <td> Tokyo </td>
+                            <td> 14 Mar, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td><img src="../../recursos/imagenes/user4.jpg" alt=""></td>
+                            <td> New Delhi </td>
+                            <td> 25 May, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td><img src="../../recursos/imagenes/user5.jpg" alt=""></td>
+                            <td> Paris </td>
+                            <td> 23 Apr, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+
+    </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>
+                            Avenida Aguilares 218 San Salvador CP, San Salvador 1101
+                        </li>
+                        <li>Teléfono: 7708 6918</li>
+                        <li>Fax: 55555300</li>
+                        <li>EmaiL: powerletters@support.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contactános</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                    </ul>
+                </div>
+
+
+
+                <img src="../../recursos/imagenes/LogoPL.ico" alt="">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../../recursos/js/script.gestion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

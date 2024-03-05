@@ -1,0 +1,157 @@
+/* header styling */
+body{
+	background: linear-gradient(rgb(0, 0, 0),rgb(74, 74, 74), rgb(255, 255, 255));
+  }
+  
+  header {
+	display: grid;
+	grid-template-rows: auto;
+  }
+  
+  .col-12 img {
+	width: auto;
+	height: 300px;
+	
+	margin-bottom: 20px;
+  }
+  
+  
+  
+  /* card styling */
+  .card {
+	border: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px
+  }
+  
+  .card-body {
+	padding: 30px;
+  }
+  
+  /* form styling */
+  label {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .form-control {
+	border-radius: 10px;
+	height: 45px;
+  }
+  
+  .mb-3 {
+	margin-bottom: 20px;
+  }
+  
+  /* image upload styling */
+  .row .col-md-6:first-child {
+	margin-right: 20px;
+  }
+  
+  .img-thumbnail {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+  }
+  
+  /* button styling */
+  .btn {
+	border-radius: 10px;
+	height: 45px;
+  }
+  
+  .btn-primary {
+	background-color: #007bff;
+	border-color: #007bff;
+	margin-right: 15px;
+  }
+  
+  .btn-secondary {
+	background-color: #6c757d;
+	border-color: #6c757d;
+  }
+  
+  /* texto alineado */
+  .text-center {
+	text-align: center;
+  }
+  
+  /* titulo estilo */
+  .h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  }
+  
+  /* subtítulo estilo */
+  .h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  /* párrafo estilo */
+  .p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+  }
+  
+  /* Centrar botones con flexbox */
+  .d-flex.justify-content-center {
+	display: flex;
+	justify-content: center;
+  }
+  
+  body {
+	background: linear-gradient(rgb(0, 0, 0),rgb(77, 75, 75), rgb(255, 255, 255));
+  
+  }
+  .col-12 img {
+	width: auto;
+	height: 300px;
+	
+	margin-bottom: 20px;
+  }
+  .img-fluid {
+	max-width: 80%;
+	height: auto;
+  }
+  
+  /* Simplified card styles */
+  .card {
+	border: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin-bottom: 30px;
+  }
+  
+  /* Simplified form styles */
+  label {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .form-control {
+	border-radius: 10px;
+	height: 45px;
+  }
+  
+  .mb-3 {
+	margin-bottom: 20px;
+  }
+  
+  /* Simplified button styles */
+  .btn {
+	border-radius: 10px;
+	height: 45px;
+	margin-top: 10px;
+  }
+  
+  /* Remove unnecessary class from primary button */
+  .btn-primary {
+	/* Background color and border color are set by Bootstrap */
+	margin-bottom: 15px;
+  }  

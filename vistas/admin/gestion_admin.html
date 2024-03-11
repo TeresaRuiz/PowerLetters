@@ -1,0 +1,231 @@
+<!-- Declaración del tipo de documento -->
+<!DOCTYPE html>
+<html lang="es">
+<!-- Sección Head con metadatos y enlaces a recursos -->
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Letters--Administradores</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../../recursos/css/gestion_administrador.css" />
+</head>
+<!-- Cuerpo de la página -->
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Contenedor -->
+        <div id="container-hero"></div>
+
+    </header>
+    <!--Utilizamos una clase para centrar en el css -->
+    <div class="centrar">
+
+        <main class="table" id="customers_table">
+            <section class="table__header">
+
+                <div class="input-group">
+                    <input type="search" placeholder="Busqueda...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </section>
+            <!--Utilizamos section para realizar nuestra tabla de usuarios-->
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <!--Ingresamos los datos que vamos a solicitar-->
+                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Icóno <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Nombre de usuario <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Correo electrónico <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Opciones <span class="icon-arrow">&UpArrow;</span></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 1 </td>
+                            <td> <img src="../../recursos/imagenes/user1Ad.jpg" alt=""></td>
+                            <td> Taylor Swift </td>
+                            <td> taylorSWift04@gmail.com </td>
+                            <td>
+                                <!--Realizamos un from emergente totalmente visible para el momento de editar usuarios-->
+
+                                <button class="open-popup" data-popup-target="popup-1"> <i
+                                        class="fa-solid fa-pen"></i></button>
+
+                                <div class="popup" id="popup-1">
+                                    <div class="popup-content">
+                                        <h2>Datos de usuario</h2>
+                                        ‎
+                                        <form>
+                                            <label for="name">Nombre:</label>
+                                            <input type="text" id="name" name="name">
+                                            <br>
+                                            <label for="email">Correo electrónico:</label>
+                                            <input type="email" id="email" name="email">
+                                            <br>
+                                            <button type="submit">Guardar</button>
+                                        </form>
+                                        <button class="close-popup">Cerrar</button>
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><img src="../../recursos/imagenes/user2.jpg" alt=""> </td>
+                            <td> Messi </td>
+                            <td> LeoMesSi@gmail.com </td>
+                            <td>
+
+                                <!--Realizamos un from emergente totalmente visible para el momento de editar usuarios-->
+
+                                <button class="open-popup" data-popup-target="popup-2"> <i
+                                        class="fa-solid fa-pen"></i></button>
+
+
+                                <div class="popup" id="popup-2">
+                                    <div class="popup-content">
+                                        <h2>Datos de usuario</h2>
+                                        ‎
+                                        <form>
+                                            <label for="name">Nombre:</label>
+                                            <input type="text" id="name" name="name">
+                                            <br>
+                                            <label for="email">Correo electrónico:</label>
+                                            <input type="email" id="email" name="email">
+                                            <br>
+                                            <button type="submit" id="mibtn">Guardar</button>
+                                        </form>
+                                        <button class="close-popup">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td><img src="../../recursos/imagenes/user3Ad.jpg" alt=""></td>
+                            <td> Ronaldo </td>
+                            <td> RonaldoCr7@gmail.com</td>
+                            <td>
+
+
+
+
+                                <!--Realizamos un from emergente totalmente visible para el momento de editar usuarios-->
+
+                                <button class="open-popup" data-popup-target="popup-3"> <i
+                                        class="fa-solid fa-pen"></i></button>
+
+                                <div class="popup" id="popup-3">
+                                    <div class="popup-content">
+                                        <h2>Datos de usuario</h2>
+                                        ‎
+                                        <form>
+                                            <label for="name">Nombre:</label>
+                                            <input type="text" id="name" name="name">
+                                            <br>
+                                            <label for="email">Correo electrónico:</label>
+                                            <input type="email" id="email" name="email">
+                                            <br>
+                                            <button type="submit">Guardar</button>
+                                        </form>
+                                        <button class="close-popup">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td><img src="../../recursos/imagenes/user4a.jpg" alt=""></td>
+                            <td> Zendaya </td>
+                            <td> ZendaYaSM@gmail.com</td>
+                            <td>
+
+
+                                <!--Realizamos un from emergente totalmente visible para el momento de editar usuarios-->
+
+                                <button class="open-popup" data-popup-target="popup-4"> <i
+                                        class="fa-solid fa-pen"></i></button>
+
+                                <div class="popup" id="popup-4">
+                                    <div class="popup-content">
+                                        <h2>Datos de usuario</h2>
+                                        ‎
+                                        <form>
+                                            <label for="name">Nombre:</label>
+                                            <input type="text" id="name" name="name">
+                                            <br>
+                                            <label for="email">Correo electronico:</label>
+                                            <input type="email" id="email" name="email">
+                                            <br>
+                                            <button type="submit">Guardar</button>
+                                        </form>
+                                        <button class="close-popup">Cerrar</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td><img src="../../recursos/imagenes/user5Ad.jpg" alt=""></td>
+                            <td> Tom </td>
+                            <td> TomHollAnd@gmail.com </td>
+                            <td>
+
+                                <!--Realizamos un from emergente totalmente visible para el momento de editar usuarios-->
+
+                                <button class="open-popup" data-popup-target="popup-5"> <i
+                                        class="fa-solid fa-pen"></i></button>
+
+                                <div class="popup" id="popup-5">
+                                    <div class="popup-content">
+                                        <h2>Datos de usuario</h2>
+                                        ‎
+                                        <form>
+                                            <label for="name">Nombre:</label>
+                                            <input type="text" id="name" name="name">
+                                            <br>
+                                            <label for="email">Correo electrónico:</label>
+                                            <input type="email" id="email" name="email">
+                                            <br>
+                                            <button type="submit">Guardar</button>
+                                        </form>
+                                        <button class="close-popup">Cerrar</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <!-- Contenedor del footer -->
+        <div id="footer-container"></div>
+    </footer>
+
+    <!--Ingresamos los links script-->
+
+    <script src="../../recursos/js/menu.js"></script>
+    <script src="../../recursos/js/footer.js"></script>
+    <script src="../../recursos/js/gestion_admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

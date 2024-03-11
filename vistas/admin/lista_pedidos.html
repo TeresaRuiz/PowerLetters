@@ -1,0 +1,143 @@
+<!-- Declaración del tipo de documento -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Letters-Lista pedidos</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../../recursos/css/lista_pedidos.css" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Contenedor parte principal -->
+        <div id="container-hero"></div>
+    </header>
+
+    <div class="centrar">
+
+        <main class="table" id="customers_table">
+            <section class="table__header">
+
+                <div class="input-group">
+                    <input type="search" placeholder="Busqueda...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </section>
+            <!--Utilizamos section para realizar nuestra tabla de usuarios-->
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <!--Ingresamos los datos que vamos a solicitar-->
+                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Icóno <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Usuario <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Correo electrónico <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Total <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Detalles <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Estado <span class="icon-arrow">&UpArrow;</span></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 1 </td>
+                            <td> <img src="../../recursos/imagenes/user1Ad.jpg" alt=""></td>
+                            <td> Taylor Swift </td>
+                            <td> taylorSWift04@gmail.com </td>
+                            <td>$120,00USD
+
+                            </td>
+                            <td>
+                                <button onclick="abrirVentana()">Ver más detalles</button>
+                            </td>
+                            <div class="estado">
+                                <td>Pendiente</td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><img src="../../recursos/imagenes/user2.jpg" alt=""> </td>
+                            <td> Messi </td>
+                            <td> LeoMesSi@gmail.com </td>
+                            <td>$120,00USD
+
+                            </td>
+                            <td>
+                                <button onclick="abrirVentana()">Ver más detalles</button>
+                            </td>
+                            <div class="estado">
+                                <td>Pendiente</td>
+                            </div>
+
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td><img src="../../recursos/imagenes/user3Ad.jpg" alt=""></td>
+                            <td> Ronaldo </td>
+                            <td> RonaldoCr7@gmail.com</td>
+                            <td>$120,00USD
+
+                            </td>
+                            <td>
+                                <button onclick="abrirVentana()">Ver más detalles</button>
+                            </td>
+                            <div class="estado">
+                                <td>Pendiente</td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td><img src="../../recursos/imagenes/user4a.jpg" alt=""></td>
+                            <td> Zendaya </td>
+                            <td> ZendaYaSM@gmail.com</td>
+                            <td>$120,00USD
+                            </td>
+                            <td>
+                                <button onclick="abrirVentana()">Ver más detalles</button>
+                            </td>
+                            <div class="estado">
+                                <td>Pendiente</td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td><img src="../../recursos/imagenes/user5Ad.jpg" alt=""></td>
+                            <td> Tom </td>
+                            <td> TomHollAnd@gmail.com </td>
+                            <td>$120,00USD
+
+                            </td>
+                            <td>
+                                <button onclick="abrirVentana()">Ver más detalles</button>
+                            </td>
+                            <div class="estado">
+                                <td>Pendiente</td>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <!-- Contenedor del footer -->
+        <div id="footer-container"></div>
+    </footer>
+    <script src="../../recursos/js/lista_pedido.js"></script>
+    <script src="../../recursos/js/footer.js"></script>
+    <!-- Script para cargar los iconos de Font Awesome -->
+    <script src="../../recursos/js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

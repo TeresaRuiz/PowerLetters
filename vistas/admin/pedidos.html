@@ -1,0 +1,151 @@
+<!-- Declaración del tipo de documento -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Letters-Libros</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../../recursos/css/styles.css" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Contenedor -->
+        <div id="container-hero"></div>
+
+    </header>
+    
+    <!-- Sección del banner 
+    <section class="banner">
+        <div class="content-banner">
+            <h2>Pedidos<br />del Usuario</h2>
+        </div>
+    </section>-->
+
+    <!-- Contenedor principal con fondo -->
+    <div class="Fondo">
+        <!-- Título de la sección de pedidos -->
+        <div class="title-cards">
+            <h2>PEDIDO DE SAMANTHA RIVERA</h2>
+        </div>
+        <!-- Contenedor de las tarjetas de pedido -->
+        <div class="container-card">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <figure>
+                    <img src="../../recursos/imagenes/JuegosH.jpg" alt="Juegos del Hambre">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Juegos del hambre</h3>
+                    <p>Precio: $24.98</p>
+                    <p>Cantidad: 2</p>
+                    <p>Usuario: Samantha Rivera</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <figure>
+                    <img src="../../recursos/imagenes/solitario.png">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Solitario</h3>
+                    <p>Precio: $24.98</p>
+                    <p>Cantidad: 2</p>
+                    <p>Usuario: Samantha Rivera</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <figure>
+                    <img src="../../recursos/imagenes/cerditos.png">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Los tres cerditos</h3>
+                    <p>Precio: $24.98</p>
+                    <p>Cantidad: 2</p>
+                    <p>Usuario</p>
+                    <p>Samantha rivera</p>
+                    <a href="#">Leer Màs</a>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="card">
+                <figure>
+                    <img src="../../recursos/imagenes/pinocho.png">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Pinocho</h3>
+                    <p>Precio: $24.98</p>
+                    <p>Cantidad: 2</p>
+                    <p>Usuario</p>
+                    <p>Samantha rivera</p>
+                    <a href="#">Leer Màs</a>
+                </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="card">
+                <figure>
+                    <img src="../../recursos/imagenes/Hear.jpg">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Heartopper</h3>
+                    <p>Precio: $24.98</p>
+                    <p>Cantidad: 2</p>
+                    <p>Usuario</p>
+                    <p>Samantha rivera</p>
+                    <a href="#">Leer Màs</a>
+                </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="card">
+                <figure>
+                    <img src="../../recursos/imagenes/potter.jpg">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Harry Potter</h3>
+                    <p>Precio: $24.98</p>
+                    <p>Cantidad: 2</p>
+                    <p>Usuario</p>
+                    <p>Samantha rivera</p>
+                    <a href="#">Leer Màs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de total -->
+    <div class="container-total">
+        <div class="totalidad">
+            <h4>TOTAL: $299.76 USD</h4>
+            <h5>MÉTODO DE PAGO: Con tarjeta</h5>
+        </div>
+        <div class="button totalidad">
+            <button id="editarPerfilBtn" class="button" onclick="redireccionar()">
+                Revision
+            </button>
+        </div>
+    </div>
+    <script>
+        function redireccionar() {
+            // Cambia 'URL_DE_DESTINO' por la URL a la que quieres redirigir
+            window.location.href = "detalle_pedido_rev.html";
+        }
+    </script>
+    <footer class="footer">
+        <!-- Contenedor del footer -->
+        <div id="footer-container"></div>
+    </footer>
+    <script src="../../recursos/js/footer.js"></script>
+    <script src="../../recursos/js/menu.js"></script>
+    <!-- Script para cargar los iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!-- Declaración del tipo de documento -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Letters-Libros</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../../recursos/css/styles.css" />
+    <link rel="stylesheet" href="../../recursos/css/formulario_libros.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Contenedor parte principal -->
+        <div id="container-hero">
+
+        </div>
+    </header>
+    <!-- Sección del banner 
+  <section class="banner">
+    <div class="content-banner">
+      <h2>Gestión de<br />libros</h2>
+    </div>
+  </section>-->
+    <br>
+    <br>
+    <h1>Agregar un nuevo libro</h1>
+    <br>
+    <div class="cuadrado">
+        <!--Boton para seleccionar la imagen -->
+        <div class="centrarimg">
+            <button id="filePicker">Seleccionar Imagen</button>
+            <div id="imageContainer"></div>
+        </div>
+    </div>
+    <div class="centrarl">
+        <form>
+            <input type="text" placeholder="Titulo de libro" id="titulo">
+            <input type="text" placeholder="Autor de libro" id="autor">
+            <input type="text" placeholder="Descripción" id="descripcion">
+        </form>
+        <br><br><br><br><br><br><br><br>
+    </div>
+    <div class="centrarl2">
+        <form>
+            <input type="number" placeholder="Precio del libro" id="precio">
+            <label for="cant"></label>
+            <input type="text" placeholder="Cantidad de existencias" id="cant">
+            <select id="generol" name="generol">
+                <option value="" selected>Selecciona un género</option>
+                <option value="Infantil">Infantil</option>
+                <option value="Acción">Acción</option>
+                <option value="Terror">Terror</option>
+                <option value="Misterio">Misterio</option>
+                <option value="Historia">Historia</option>
+            </select>
+        </form>
+        <br><br><br><br><br><br><br><br>
+    </div>
+    <div class="centrarl3">
+        <form>
+            <select id="clasi" name="clasi">
+                <option value="" selected>Selecciona una clasificación</option>
+                <option value="Infantil">Infantil</option>
+                <option value="Acción">Acción</option>
+                <option value="Terror">Terror</option>
+                <option value="Misterio">Misterio</option>
+                <option value="Historia">Historia</option>
+            </select>
+            <select id="edit" name="edit">
+                <option value="" selected>Selecciona una editorial</option>
+                <option value="Infantil">Infantil</option>
+                <option value="Acción">Acción</option>
+                <option value="Terror">Terror</option>
+                <option value="Misterio">Misterio</option>
+                <option value="Historia">Historia</option>
+            </select>
+            <select id="desc" name="desc">
+                <option value="" selected>Descuentos</option>
+                <option value="Infantil">Añadir a descuentos</option>
+                <option value="Acción">Sin descuento</option>
+            </select>
+        </form>
+    </div>
+    <div class="cbotones">
+        <button onclick="showAlertaA()">Actualizar</button>
+        <button onclick="Agregar()">Agregar</button>
+    </div>
+    <h4>Tabla de libros agregados</h4>
+    <br><br><br><br><br><br><br><br>
+    <!--Utilizamos una clase para centrar en el css -->
+    <div class="centrar">
+        <main class="table" id="customers_table">
+            <section class="table__header">
+            </section>
+            <!--Utilizamos section para realizar nuestra tabla de usuarios-->
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <!--Ingresamos los datos que vamos a solicitar-->
+                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Portada de libro <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Datos <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Existencias <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Precio <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Descuentos <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Opciones <span class="icon-arrow">&UpArrow;</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 1 </td>
+                            <td> <img src="../../recursos/imagenes/cerditos.png" alt=""></td>
+                            <td>
+                                <div class="leerM">
+                                    <button onclick="alertaemergt()">Leer más</button>
+                                </div>
+                            </td>
+                            <td>6 unidades</td>
+                            <td>$20.99
+                            </td>
+                            <td>
+                                <p>Sin descuento</p>
+                            </td>
+                            <td>
+                                <button class="open-popup" onclick="showAlerta()" data-popup-target="popup-3"> <i
+                                        class="fa-solid fa-pen"></i></button>
+                                <button class="botonE" onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 2 </td>
+                            <td> <img src="../../recursos/imagenes/pinocho.png" alt=""></td>
+                            <td>
+                                <div class="leerM">
+                                    <button onclick="alertaemergt()">Leer más</button>
+                                </div>
+                            </td>
+                            <td>6 unidades</td>
+                            <td>$20.99
+                            </td>
+                            <td>
+                                <p>Sin descuento</p>
+                            </td>
+                            <td>
+                                <button class="open-popup" onclick="showAlerta()" data-popup-target="popup-3"> <i
+                                        class="fa-solid fa-pen"></i></button>
+                                <button class="botonE" onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 3 </td>
+                            <td> <img src="../../recursos/imagenes//Hear.jpg" alt=""></td>
+                            <td>
+                                <div class="leerM">
+                                    <button onclick="alertaemergt()">Leer más</button>
+                                </div>
+                            </td>
+                            <td>6 unidades</td>
+                            <td>$20.99
+                            </td>
+                            <td>
+                                <p>Sin descuento</p>
+                            </td>
+                            <td>
+                                <button class="open-popup" onclick="showAlerta()" data-popup-target="popup-3"> <i
+                                        class="fa-solid fa-pen"></i></button>
+                                <button class="botonE" onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 4 </td>
+                            <td> <img src="../../recursos/imagenes/JuegosH.jpg" alt=""></td>
+                            <td>
+                                <div class="leerM">
+                                    <button onclick="alertaemergt()">Leer más</button>
+                                </div>
+                            </td>
+                            <td>6 unidades</td>
+                            <td>$20.99
+                            </td>
+                            <td>
+                                <p>Sin descuento</p>
+                            </td>
+                            <td>
+                                <button class="open-popup" onclick="showAlerta()" data-popup-target="popup-3"> <i
+                                        class="fa-solid fa-pen"></i></button>
+                                <button class="botonE" onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 5 </td>
+                            <td> <img src="../../recursos/imagenes//potter.jpg" alt=""></td>
+                            <td>
+                                <div class="leerM">
+                                    <button onclick="alertaemergt()">Leer más</button>
+                                </div>
+                            </td>
+                            <td>6 unidades</td>
+                            <td>$20.99
+                            </td>
+                            <td>
+                                <p>Sin descuento</p>
+                            </td>
+                            <td>
+                                <button class="open-popup" onclick="showAlerta()" data-popup-target="popup-3"> <i
+                                        class="fa-solid fa-pen"></i></button>
+                                <button class="botonE" onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <!--Llenamos con la información que se solicita-->
+                            <td> 6 </td>
+                            <td> <img src="../../recursos/imagenes//imglibros.png" alt=""></td>
+                            <td>
+                                <div class="leerM">
+                                    <button onclick="alertaemergt()">Leer más</button>
+                                </div>
+                            </td>
+                            <td>6 unidades</td>
+                            <td>$20.99
+                            </td>
+                            <td>
+                                <p>Sin descuento</p>
+                            </td>
+                            <td>
+                                <button class="open-popup" onclick="showAlerta()" data-popup-target="popup-3"> <i
+                                        class="fa-solid fa-pen"></i></button>
+                                <button class="botonE" onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <!-- Contenedor del footer -->
+        <div id="footer-container"></div>
+    </footer>
+    <script src="../../recursos/js/libros.js"></script>
+    <script src="../../recursos/js/footer.js"></script>
+    <!-- Script para cargar los iconos de Font Awesome -->
+    <script src="../../recursos/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

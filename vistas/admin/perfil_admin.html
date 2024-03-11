@@ -1,0 +1,93 @@
+<!-- Declaración del tipo de documento -->
+<!DOCTYPE html>
+<html lang="es">
+<!-- Sección Head con metadatos y enlaces a recursos -->
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Letters--Cuenta</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../../recursos/css/modal.css">
+    <link rel="stylesheet" href="../../recursos/css/styles.css" />
+</head>
+<!-- Cuerpo de la página -->
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Contenedor -->
+        <div id="container-hero"></div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <div class="avatar" style="background-image: url(../../recursos/imagenes/powweletters.jpeg);"
+                alt="Lee Robinson"></div>
+            <div class="text-center space-y-1">
+                <h3 class="card-title">Teresa Ruiz</h3>
+                <p class="card-description">20220651@ricaldone.edu.sv</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <div class="text-center space-y-1">
+                <h3 class="card-title">Administrador de libros</h3>
+                <p class="card-description">Telefóno: +503 7708-6918</p>
+                <p class="card-description">Fecha de registro: 10/03/2024</p>
+            </div>
+            <button class="button">
+                Editar perfil
+            </button>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Perfil</h2>
+            <form id="editForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="clave">Clave:</label>
+                <input type="password" id="clave" name="clave" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen">
+
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Sección del footer -->
+    </section>
+    <footer class="footer">
+        <!-- Contenedor del footer -->
+        <div id="footer-container"></div>
+    </footer>
+
+    <script src="../../recursos/js/modal.js"></script>
+    <script src="../../recursos/js/footer.js"></script>
+    <script src="../../recursos/js/menu.js"></script>
+    <!-- Script para cargar los iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initual=1.0">
+    <title>Gestion de clientes</title>
+    <link rel="stylesheet" href="../../recursos/css/gestion_clientes.css">
+</head>
+
+<body>
+    <header>
+        <!-- Contenedor -->
+        <div id="container-hero"></div>
+
+    </header>
+
+    <div class="centrar">
+
+        <main class="table" id="customers_table">
+            <section class="table__header">
+
+                <div class="input-group">
+                    <input type="search" placeholder="Busqueda...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </section>
+
+            <!-- Añadimos los datos que se solicitaran en la tabla -->
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Icóno <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Nombre de usuario <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Correo electrónico <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Opciones <span class="icon-arrow">&UpArrow;</span></th>
+
+                        </tr>
+                    </thead>
+
+                    <!-- Llenamos los campos con la informaciòn que se solicito en la tabla-->
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> <img src="../../recursos/imageneS/user1.jpg" alt=""></td>
+                            <td> Seoul </td>
+                            <td> 17 Dec, 2022 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><img src="../../recursos/imagenes/user2.jpg" alt=""> </td>
+                            <td> Kathmandu </td>
+                            <td> 27 Aug, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td><img src="../../recursos/imagenes/user3.jpg" alt=""></td>
+                            <td> Tokyo </td>
+                            <td> 14 Mar, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td><img src="../../recursos/imagenes/user4.jpg" alt=""></td>
+                            <td> New Delhi </td>
+                            <td> 25 May, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td><img src="../../recursos/imagenes/user5.jpg" alt=""></td>
+                            <td> Paris </td>
+                            <td> 23 Apr, 2023 </td>
+                            <td>
+
+                                <button onclick="showAlert()"><i class="fa-solid fa-trash"></i></button>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <!-- Contenedor del footer -->
+        <div id="footer-container"></div>
+    </footer>
+
+    <!-- Archivos script -->
+    <script src="../../recursos/js/menu.js"></script>
+    <script src="../../recursos/js/footer.js"></script>
+    <script src="../../recursos/js/gestion_alertas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

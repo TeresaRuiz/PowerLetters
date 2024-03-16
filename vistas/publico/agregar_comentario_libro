@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comentarios del libro</title>
+    <link rel="stylesheet" href="miparte.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <header >
+        <!-- Contenedor -->
+        <div class="container-hero">
+            <!-- Logo y nombre -->
+            <div class="container hero">
+                <div class="container-logo">
+                    <img src="../../recursos/imagenes/LogoPL.png" width="150">
+                    <h1 class="logo"><a href="inicio.html">Power Letters</a></h1>
+                </div>
+                <!-- Icono de usuario -->
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Barra de navegación -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <!-- Ícono de menú desplegable -->
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+                <!-- Lista de enlaces de navegación -->
+                <ul class="menu">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="crud.html">Añadir</a></li>
+                    <li><a href="libros.html">Libros</a></li>
+                    <li><a href="lista_pedidos.html">Pedidos</a></li>
+                    <li><a href="gestion_de_usuarios.html">Usuarios</a></li>
+                    <li><a href="perfil_admin.html">Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header></header>
+
+    
+    <section class="contenido">
+
+        <div class="cabecera">
+            <h1 class="titulo">Pinocho</h1>
+        </div>
+
+        <section class="descripcion">
+            <p>Gepetto, el viejo carpintero, deseaba que su última creación, Pinocho, una bonita marioneta de madera, fuera su hijo y se convirtiera en un niño de verdad. El Hada Azul le concedió el deseo, no sin antes advertir a Pinocho que para ser un niño de verdad deberá demostrar que es generoso, obediente y sincero.</p>
+        </section>
+
+        <section class="autor">
+            <h2 class="nombre-autor">Carlo Collodi</h2>
+            <p class="biografia">Carlo Collodi (Florencia, 27 de noviembre de 1826 - Siena, 26 de enero de 1890) fue un escritor italiano, conocido principalmente por ser el autor de la novela de aventuras "Las aventuras de Pinocho".</p>
+        </section>
+
+        <section class="seccion-libros">
+  
+        <h2 class="titulo-seccion">Seleccione la cantidad de libros que desea</h2>
+
+        <div class="cantidad-libros">
+          <input type="number" id="cantidadLibros" value="0" min="0">
+        </div>
+
+        <div class="botones">
+          <button class="btn btn-primary">Agregar a Carrito</button>
+          <button class="btn btn-secondary">Agregar a Favoritos</button>
+        </div>
+  
+        </section>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Jg68EAy0r2A5X+i7QrE ...
+
+</body>
+</html>

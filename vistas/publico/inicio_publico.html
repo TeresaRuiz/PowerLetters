@@ -1,133 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Las 4 metaetiquetas anteriores *deben* ir primero en la cabecera; cualquier otro contenido de la cabecera debe venir *después* de estas etiquetas -->
-
-    <!-- Título -->
-    <title>Power letters</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Hoja de Estilos Principal -->
-    <link rel="stylesheet" href="../../recursos/css/pantalla_inicio_publica.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../recursos/css/styles_publico.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <!-- ##### Precargador ##### -->
-    <div id="preloader">
-        <i class="circle-preloader"></i>
-    </div>
-
-    <!-- ##### Área de Cabecera ##### -->
-    <header class="header-area">
-
-        <!-- Área de Cabecera Superior -->
-        <div class="top-header">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-12 h-100">
-                        <div class="header-content h-100 d-flex align-items-center justify-content-between">
-                            <div class="academy-logo">
-                                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
-                            </div>
-                            <div class="login-content">
-                                <a href="#">Registro / Iniciar Sesión</a>
-                            </div>
-                        </div>
+    <header>
+        <div class="container-hero">
+            <!-- Logo y nombre -->
+            <div class="container hero">
+                <div class="container-logo">
+                    <img src="../../recursos/imagenes/LogoPL.png" width="150">
+                    <h1 class="logo"><a href="inicio.html">Power Letters</a></h1>
+                </div>
+                <!-- Icono de usuario -->
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Área de Barra de Navegación -->
-        <div class="academy-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Menú -->
-                    <nav class="classy-navbar justify-content-between" id="academyNav">
-
-                        <!-- Toggler del Navbar -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menú -->
-                        <div class="classy-menu">
-
-                            <!-- Botón de Cierre -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Inicio de Navegación -->
-                            <div class="classynav">
-                                <ul>
-                                    <li><a href="index.html">Inicio</a></li>
-                                    <li><a href="#">Páginas</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Inicio</a></li>
-                                            <li><a href="about-us.html">Sobre Nosotros</a></li>
-                                            <li><a href="course.html">Curso</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="contact.html">Contacto</a></li>
-                                            <li><a href="elements.html">Elementos</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Menú Mega</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="#">Inicio</a></li>
-                                                <li><a href="#">Servicios y Características</a></li>
-                                                <li><a href="#">Acordeones y pestañas</a></li>
-                                                <li><a href="#">Ideas para menú</a></li>
-                                                <li><a href="#">Galería de Estudiantes</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="#">Inicio</a></li>
-                                                <li><a href="#">Servicios y Características</a></li>
-                                                <li><a href="#">Acordeones y pestañas</a></li>
-                                                <li><a href="#">Ideas para menú</a></li>
-                                                <li><a href="#">Galería de Estudiantes</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="#">Inicio</a></li>
-                                                <li><a href="#">Servicios y Características</a></li>
-                                                <li><a href="#">Acordeones y pestañas</a></li>
-                                                <li><a href="#">Ideas para menú</a></li>
-                                                <li><a href="#">Galería de Estudiantes</a></li>
-                                            </ul>
-                                            <div class="single-mega cn-col-4">
-                                                <img src="img/bg-img/bg-1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li><a href="about-us.html">Sobre Nosotros</a></li>
-                                    <li><a href="course.html">Curso</a></li>
-                                    <li><a href="contact.html">Contacto</a></li>
-                                </ul>
-                            </div>
-                            <!-- Fin de Navegación -->
-                        </div>
-
-                        <!-- Información de Contacto -->
-                        <div class="calling-info">
-                            <div class="call-center">
-                                <a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+65) 456 332 5568 889</span></a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+        </div>
+        <!-- Barra de navegación -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <!-- Ícono de menú desplegable -->
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+                <!-- Lista de enlaces de navegación -->
+                <ul class="menu">
+                    <li><a href="inicio_publico.html">Inicio</a></li>
+                    <li><a href="inicio_publico.html">Libros</a></li>
+                    <li><a href="inicio_publico.html">Genéros</a></li>
+                    <li><a href="inicio_publico.html">Clasificaciones</a></li>
+                    <li><a href="inicio_publico.html">Descuentos</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <!-- ##### Fin de Área de Cabecera ##### -->
+    <!-- Sección del banner -->
+  <section class="banner">
+    <div class="content-banner">
+    </div>
+  </section>
+    <br>
+    <br>
+    <script src="../../recursos/js/menu.js"></script>
 </body>
-
 </html>

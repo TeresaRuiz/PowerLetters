@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(0, 0, 0),rgb(74, 74, 74), rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #loader {
+    text-align: center;
+  }
+  #loader img {
+    max-width: 200px;
+  }
+  #progressBar {
+    width: 300px;
+    height: 20px;
+    background-color: #333;
+    margin-top: 20px;
+  }
+  #progressBarFill {
+    height: 100%;
+    background-color: #ffffff;
+  }

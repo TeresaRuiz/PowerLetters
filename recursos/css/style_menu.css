@@ -37,13 +37,18 @@ html {
 
 .container-hero {
 	background-color: var(--background-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000; /* Asegura que el header esté por encima del resto del contenido */
 }
 
 .hero {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 0;
+	padding: 1rem 0; /* Reduje el padding para mantener el header más delgado */
 }
 
 .container-logo {
@@ -53,13 +58,13 @@ html {
 }
 
 .container-logo i {
-	font-size: 3rem;
+	font-size: 2rem; /* Reduje el tamaño del icono */
 }
 
 .container-logo h1 a {
 	text-decoration: none;
 	color: #ffffff;
-	font-size: 3rem;
+	font-size: 2rem; /* Reduje el tamaño del texto del logo */
 	text-transform: uppercase;
 	letter-spacing: -1px;
 }
@@ -71,14 +76,14 @@ html {
 }
 
 .container-user .fa-user {
-	font-size: 3rem;
+	font-size: 2rem; /* Reduje el tamaño del icono */
 	color: var(--primary-color);
-	padding-right: 2.5rem;
+	padding-right: 1.5rem; /* Reduje el espacio entre el icono de usuario y el icono del carrito */
 	border-right: 1px solid #e2e2e2;
 }
 
 .container-user .fa-basket-shopping {
-	font-size: 3rem;
+	font-size: 2rem; /* Reduje el tamaño del icono */
 	color: var(--primary-color);
 	padding-left: 1rem;
 }
@@ -87,6 +92,12 @@ html {
 /* ************* NAVBAR ************* */
 .container-navbar {
 	background-color: var(--background-color);
+	position: fixed; /* Mantener fijo en la parte superior */
+	top: 1rem; /* Ajustar según el margen superior del header */
+	left: 0;
+	right: 0;
+	z-index: 50;
+	margin-top: 9.5rem;
 }
 
 .navbar {

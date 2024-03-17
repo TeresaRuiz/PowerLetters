@@ -481,7 +481,7 @@ BANNER .btn-search i {
 
 .button-group span i {
 	font-size: 1.5rem;
-	color: var(--primary-color);
+	color: #000000;
 }
 
 .button-group span:hover i {

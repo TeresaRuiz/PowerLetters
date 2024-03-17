@@ -1,55 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../recursos/css/styles_publico.css">
-    <title>Document</title>
+    <title>Power Letters - Inicio</title>
 </head>
+
 <body>
     <header>
-        <div class="container-hero">
-            <!-- Logo y nombre -->
-            <div class="container hero">
-                <div class="container-logo">
-                    <img src="../../recursos/imagenes/LogoPL.png" width="150">
-                    <h1 class="logo"><a href="inicio.html">Power Letters</a></h1>
-                </div>
-                <!-- Icono de usuario -->
-                <div class="container-user">
-                    <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                    <div class="content-shopping-cart">
-                        <span class="text">Carrito</span>
-                        <span class="number">(0)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- Barra de navegación -->
-        <div class="container-navbar">
-            <nav class="navbar container">
-                <!-- Ícono de menú desplegable -->
-                <i id="menu-icon" class="fa-solid fa-bars"></i>
-                <!-- Lista de enlaces de navegación -->
-                <ul class="menu">
-                    <li><a href="inicio_publico.html">Inicio</a></li>
-                    <li><a href="inicio_publico.html">Libros</a></li>
-                    <li><a href="inicio_publico.html">Genéros</a></li>
-                    <li><a href="inicio_publico.html">Clasificaciones</a></li>
-                    <li><a href="inicio_publico.html">Descuentos</a></li>
-                </ul>
-            </nav>
+        <div id="container-hero">
         </div>
     </header>
     <!-- Sección del banner -->
-  <section class="banner">
-    <div class="content-banner">
+    <section class="banner">
+        <div class="content-banner">
+            <div class="banner-image"></div> <!-- Aquí se encuentra tu imagen del banner -->
+            <form id="search-form" action="#" method="get">
+                <input type="text" id="search-input" placeholder="Buscar en power letters...">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+    <section class="w-full py-12 md:py-24">
+        <div class="container px-4 flex flex-col gap-4 items-center text-center">
+            <div class="grid gap-4">
+                <h2 class="text-3xl font-bold tracking-tight">¿Quiénes somos?</h2>
+                <p class="text-gray-500 dark:text-gray-400">
+                    En Power Letters, creemos en el poder transformador de la palabra escrita. Desde nuestra fundación
+                    en 2024, nos hemos dedicado a compartir nuestra pasión por la literatura y el
+                    conocimiento con cada uno de nuestros clientes. Nos esforzamos por ser mucho más que una simple
+                    tienda de libros; somos un destino para los amantes de la lectura, un lugar donde las historias
+                    cobran vida y las mentes se expanden.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4">
+                <img src="../../recursos/imagenes/banner.jpg" width="400" height="250" alt="Team photo"
+                    class="rounded-lg object-cover w-full team-photo">
+                <img src="../../recursos/imagenes/Banner2.png" width="400" height="250" alt="Office photo"
+                    class="rounded-lg object-cover w-full office-photo">
+                <img src="../../recursos/imagenes/powweletters.jpeg" width="400" height="250" alt="Team building photo"
+                    class="rounded-lg object-cover w-full team-building-photo">
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full py-12 bg-gray-50">
+        <div class="container grid gap-6 lg:gap-8 px-4">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold tracking-tight">Misión</h3>
+                    <p class="text-gray-500">
+                        En Power Letters, nuestra misión es promover la exploración intelectual, la imaginación y el
+                        aprendizaje continuo a través de la literatura. Nos esforzamos por ofrecer una cuidadosa
+                        selección de libros que inspiren, entretengan y eduquen a nuestros clientes, creando así un
+                        puente entre autores y lectores que trasciende fronteras y culturas.
+                    </p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="../../recursos/imagenes/banner.jpg" width="200" height="200" alt="Mission"
+                        class="mission-image">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <div class="flex items-center justify-center">
+                    <img src="../../recursos/imagenes/banner_publico.jpeg" width="200" height="200" alt="Vision"
+                        class="vision-image">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold tracking-tight">Vision</h3>
+                    <p class="text-gray-500">
+                        En Power Letters, aspiramos a ser el destino preferido de los amantes de la lectura en todo el
+                        mundo. Visualizamos un futuro donde cada persona, sin importar su origen o ubicación, tenga
+                        acceso a una amplia gama de libros que inspiren, eduquen y entretengan. Nos esforzamos por ser
+                        líderes en la promoción de la lectura y en la difusión del conocimiento, contribuyendo así a la
+                        creación de una sociedad más informada, empática y consciente. Con nuestra pasión por los libros
+                        como guía, buscamos inspirar a millones de personas a descubrir el poder transformador de la
+                        palabra escrita y a imaginar un mundo lleno de posibilidades infinitas.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-    <br>
-    <br>
-    <script src="../../recursos/js/menu.js"></script>
+    <section class="w-full py-12 text-center">
+        <h2 class="text-3xl mb-6">Equipo</h2>
+        <div class="container grid items-center gap-6 px-4 mx-auto lg:grid-cols-3">
+            <div class="flex items-center gap-4">
+                <img src="../../recursos/imagenes/banner.jpg" width="120" height="120" alt="Amanda Johnson"
+                    class="rounded-full team-member-image">
+                <div class="grid gap-1.5">
+                    <h3 class="text-lg font-semibold">Teresa Ruiz</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Coordinadora</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="../../recursos/imagenes/banner.jpg" width="120" height="120" alt="Brandon Lee"
+                    class="rounded-full team-member-image">
+                <div class="grid gap-1.5">
+                    <h3 class="text-lg font-semibold">Verónica Sánchez</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Sub coordinadora</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="../../recursos/imagenes/banner.jpg" width="120" height="120" alt="Samantha White"
+                    class="rounded-full team-member-image">
+                <div class="grid gap-1.5">
+                    <h3 class="text-lg font-semibold">Rodrigo Díaz</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Supervisor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <!-- Contenedor del footer -->
+        <div id="footer-container">
+
+        </div>
+    </footer>
+    <script src="../../recursos/js/footer.js"></script>
+    <script src="../../recursos/js/menu_publico.js"></script>
 </body>
+
 </html>

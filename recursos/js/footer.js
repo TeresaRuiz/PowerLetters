@@ -1,4 +1,4 @@
-fetch('footer.html')
+fetch('../admin/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer-container').innerHTML = data;

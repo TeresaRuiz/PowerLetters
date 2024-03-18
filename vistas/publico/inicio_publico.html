@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Define el tipo de documento como HTML5 -->
+<html lang="es">
+<!-- Inicia el documento HTML y establece el idioma en español -->
 
 <head>
+    <!-- Contiene metadatos como la codificación de caracteres y la configuración de la vista -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../recursos/css/styles_publico.css">
     <title>Power Letters - Inicio</title>
+    <!-- Establece el título de la página como "Power Letters - Inicio" -->
+    <link rel="stylesheet" href="../../recursos/css/styles_publico.css">
+    <!-- Enlaza una hoja de estilos externa llamada "styles_publico.css" -->
 </head>
 
 <body>
+    <!-- Contiene el contenido visible de la página -->
     <header>
         <div id="container-hero">
+            <!-- Contenido del encabezado si es necesario -->
         </div>
     </header>
+
     <!-- Sección del banner -->
     <section class="banner">
         <div class="content-banner">
-            <div class="banner-image"></div> <!-- Aquí se encuentra tu imagen del banner -->
+            <div class="banner-image">
+                <!-- Aquí se encuentra tu imagen del banner -->
+            </div>
             <form id="search-form" action="#" method="get">
                 <input type="text" id="search-input" placeholder="Buscar en power letters...">
                 <button type="submit"><i class="fa-solid fa-search"></i></button>
             </form>
         </div>
     </section>
+
+    <!-- Sección de presentación -->
     <section class="w-full py-12 md:py-24">
         <div class="container px-4 flex flex-col gap-4 items-center text-center">
             <div class="grid gap-4">
@@ -36,6 +48,7 @@
                 </p>
             </div>
             <div class="grid md:grid-cols-3 gap-4">
+                <!-- Imágenes relacionadas con la presentación -->
                 <img src="../../recursos/imagenes/banner.jpg" width="400" height="250" alt="Team photo"
                     class="rounded-lg object-cover w-full team-photo">
                 <img src="../../recursos/imagenes/Banner2.png" width="400" height="250" alt="Office photo"
@@ -45,9 +58,10 @@
             </div>
         </div>
     </section>
-
+    <!-- Sección de Misión y Visión -->
     <div class="w-full py-12 bg-gray-50">
         <div class="container grid gap-6 lg:gap-8 px-4">
+            <!-- Contenido sobre la Misión -->
             <div class="grid md:grid-cols-2 gap-6 items-center">
                 <div class="flex flex-col gap-4">
                     <h3 class="text-2xl font-bold tracking-tight">Misión</h3>
@@ -59,17 +73,18 @@
                     </p>
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="../../recursos/imagenes/banner.jpg" width="200" height="200" alt="Mission"
+                    <img src="../../recursos/imagenes/mision.svg" width="200" height="200" alt="Mission"
                         class="mission-image">
                 </div>
             </div>
             <div class="grid md:grid-cols-2 gap-6 items-center">
                 <div class="flex items-center justify-center">
-                    <img src="../../recursos/imagenes/banner_publico.jpeg" width="200" height="200" alt="Vision"
+                    <img src="../../recursos/imagenes/vision.jpeg" width="200" height="200" alt="Vision"
                         class="vision-image">
                 </div>
+                <!-- Contenido sobre la Visión -->
                 <div class="flex flex-col gap-4">
-                    <h3 class="text-2xl font-bold tracking-tight">Vision</h3>
+                    <h3 class="text-2xl font-bold tracking-tight">Visión</h3>
                     <p class="text-gray-500">
                         En Power Letters, aspiramos a ser el destino preferido de los amantes de la lectura en todo el
                         mundo. Visualizamos un futuro donde cada persona, sin importar su origen o ubicación, tenga
@@ -83,11 +98,12 @@
             </div>
         </div>
     </div>
+    <!-- Sección del Equipo -->
     <section class="w-full py-12 text-center">
         <h2 class="text-3xl mb-6">Equipo</h2>
         <div class="container grid items-center gap-6 px-4 mx-auto lg:grid-cols-3">
             <div class="flex items-center gap-4">
-                <img src="../../recursos/imagenes/banner.jpg" width="120" height="120" alt="Amanda Johnson"
+                <img src="../../recursos/imagenes/person-solid.svg" width="120" height="120" alt="Amanda Johnson"
                     class="rounded-full team-member-image">
                 <div class="grid gap-1.5">
                     <h3 class="text-lg font-semibold">Teresa Ruiz</h3>
@@ -95,7 +111,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-4">
-                <img src="../../recursos/imagenes/banner.jpg" width="120" height="120" alt="Brandon Lee"
+                <img src="../../recursos/imagenes/person-solid.svg" width="120" height="120" alt="Brandon Lee"
                     class="rounded-full team-member-image">
                 <div class="grid gap-1.5">
                     <h3 class="text-lg font-semibold">Verónica Sánchez</h3>
@@ -103,7 +119,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-4">
-                <img src="../../recursos/imagenes/banner.jpg" width="120" height="120" alt="Samantha White"
+                <img src="../../recursos/imagenes/person-solid.svg" width="100" height="120" alt="Samantha White"
                     class="rounded-full team-member-image">
                 <div class="grid gap-1.5">
                     <h3 class="text-lg font-semibold">Rodrigo Díaz</h3>
@@ -113,13 +129,15 @@
         </div>
     </section>
     <footer class="footer">
-        <!-- Contenedor del footer -->
-        <div id="footer-container">ㅤ<p></p>
+        <div id="footer-container">
+            <!-- Contenido del footer -->
         </div>
     </footer>
+
     <script src="../../recursos/js/footer.js"></script>
     <script src="../../recursos/js/menu_publico.js"></script>
     <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <!-- Enlaza scripts para funcionalidades adicionales -->
 </body>
 
 </html>

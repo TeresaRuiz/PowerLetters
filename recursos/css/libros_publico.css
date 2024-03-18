@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #f9f5f0;
+    --background-color: #000000;
+    --dark-color: #f9f5f0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*********************ESTILO DE SLIDER**************************/
+
+.colorsl {
+    width: 100%;
+    height: 95vh;
+    color: #fff;
+    background: linear-gradient(45deg, red, blue,pink, rgb(10, 207, 233), black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+
+}
+h2{
+    color: #000;
+    text-align: center;
+    
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.search {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-txt {
+    display: flex;
+    align-items: center;
+
+}
+
+.libros {
+    padding: 50px 0 150px 0;
+
+}
+
+.libros h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.libros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio entre grupos de libros */
+}
+
+.libros-group {
+    width: 30%; /* Ancho de cada grupo de libros */
+    margin-bottom: 20px; /* Espaciado entre grupos de libros */
+}
+
+.swiper-slide img {
+    width: 100%; /* Ajusta el tamaño de las imágenes al contenedor */
+}
+
+.swiper {
+    width: 100%;
+
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    background-size: 10px;
+}
+
+@media(max-width:991px) {
+    body {
+        min-height: 0vh;
+    }
+
+    .search {
+        padding: 30px 30px 0 30px;
+
+    }
+
+    .libros {
+        padding: 30px;
+    }
+}
+
+/***********TARJETAS DE LIBROS**************/
+.mibody2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 100px; /* Ajusta este valor según la altura de tu pie de página */
+}
+
+
+.card {
+    margin: 100px 0;
+    position: relative;
+    height: 400px;
+    cursor: pointer;
+    width: calc(44.44% - 30px); /* Utiliza un ancho relativo para mostrar tres tarjetas por fila */
+    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(50% - 40px); /* En pantallas más pequeñas, muestra dos tarjetas por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 40px); /* En pantallas aún más pequeñas, muestra una tarjeta por fila */
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento al pasar el ratón */
+}
+
+.card .front img {
+    position: absolute;
+    object-fit: cover;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.card figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 49, 49, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card figure:hover > .capa h3 {
+    margin-top: 11px;
+    margin-bottom: 15px;
+}
+
+.card figure .capa h3 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+
+.card figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.textos {
+    color: white;
+}
+
+

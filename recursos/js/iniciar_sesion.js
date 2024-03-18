@@ -4,6 +4,6 @@ function showAlerta() {
     event.preventDefault();
     setTimeout(function() {
         // Enviar manualmente el formulario después de 2 segundos
-        window.location.href = "inicio.html";
+        window.location.href = "../publico/pantalla_de_carga.html";
     }, 2000); // Redirigir después de 2 segundos (2000 milisegundos)
 }
